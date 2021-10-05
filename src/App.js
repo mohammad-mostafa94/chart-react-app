@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import AreaChart2 from './components/AreaChart/AreaChart';
+import CustomContentOfTooltip from './components/CustomContentOfTooltip/CustomContentOfTooltip';
+import Chart from './components/SimpleChart/Chart';
+import SpecifiedDomainRadarChart from './components/SpecifiedDomainRadarChart/SpecifiedDomainRadarChart';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <SpecifiedDomainRadarChart></SpecifiedDomainRadarChart>
+    <CustomContentOfTooltip></CustomContentOfTooltip>
+    <AreaChart2></AreaChart2>
+      <Chart></Chart>
     </div>
   );
 }
